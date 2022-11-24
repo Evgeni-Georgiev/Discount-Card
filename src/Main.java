@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
-        Card cardSilver = new SilverCard();
-        Card cardGold = new GoldCard();
-        Card cardBronze = new BronzeCard();
+	public static void main(String[] args) {
+		Card cardSilver = new SilverCard();
+		Card cardGold = new GoldCard();
+		Card cardBronze = new BronzeCard();
 
 		ArrayList<Card> cards = new ArrayList<>();
 		cards.add(cardSilver);
 		cards.add(cardGold);
 		cards.add(cardBronze);
 
-		for(var card : cards) {
+		for (var card : cards) {
 
 			card.prevPurchase.add(100.0);
 			card.prevPurchase.add(100.0);
@@ -41,5 +41,5 @@ public class Main {
 
 		}
 
-    }
+	}
 }
